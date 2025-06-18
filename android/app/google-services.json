@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459027255649",
+    "project_id": "fluttrer-assesment",
+    "storage_bucket": "fluttrer-assesment.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459027255649:android:bd02dd0c3edec04b0f7520",
+        "android_client_info": {
+          "package_name": "com.example.assesment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUvnGUqNpwRRRs5Aq4QwwlGgM4FwP-PQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

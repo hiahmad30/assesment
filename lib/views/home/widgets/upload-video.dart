@@ -20,13 +20,14 @@ class _VideoUploadPageState extends State<VideoUploadPage> {
     final result = await FilePicker.platform.pickFiles(type: FileType.video);
     if (result != null && result.files.single.path != null) {
       setState(() {
-        _selectedVideo = File(result.files.single.path!);
+        _selectedVideo = File(result.files.single.path ?? '');
       });
     }
   }
 
   Future<void> uploadVideo() async {
-    if (captionController.text.trim().isEmpty) {
+    if (_selectedVideo?.path.isEmpty == true &&
+        captionController.text.trim().isEmpty) {
       Get.snackbar(
         "Error",
         "Please select a video and add a caption",

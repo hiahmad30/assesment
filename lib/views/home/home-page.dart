@@ -20,9 +20,11 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Get.to(() => VideoUploadPage());
+        onPressed: () async {
+          await Get.to(() => VideoUploadPage());
+          controller.fetchVideos();
         }, // => controller.pickAndUploadVideo(),
+
         child: Icon(Icons.add),
       ),
     );
